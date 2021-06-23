@@ -10,20 +10,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <title>Bump'12</title>
+    <script src="page/comp.js"></script>
+    <script src="page/slider.js"></script>
+    <script>
+        (function() {
+            new Slider("#slider .slide").options({
+                prev: "#slider nav button.arrow-prev",
+                next: "#slider nav button.arrow-next",
+                nav: "#slider nav.dots span"
+            }).init();
+        })();
+    </script>
 </head>
 
 <body>
     <header>
-        <img class="desctop-nav-inline-content" src="page/bump.gif">
+        <img class="menu" src="page/bump.gif">
         <nav>
-            <a class="desctop-nav-inline-content" href="#">O NAS</a>
-            <a class="desctop-nav-inline-content" href="#">KOLEKTYW</a>
-            <a id="shop" class="desctop-nav-inline-content" href="#">SKLEP (W DRODZE)</a>
-            <a class="desctop-nav-inline-content" href="#">RADIO</a>
+            <a class="menu" href="#">O NAS</a>
+            <a class="menu" href="#">KOLEKTYW</a>
+            <a class="menu" href="#">SKLEP (W DRODZE)</a>
+            <a class="menu" href="#">RADIO</a>
         </nav>
     </header>
     <div class="onas">
         <div class="slide">
+            <div id="slider" class="slides">
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="page/barto.jpg" alt="Pierwszy slide">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="page/kobyla.jpg" alt="Drugi slide">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="uploads/images/blog/slide3.jpg" alt="Trzeci slide">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="uploads/images/blog/slide4.jpg" alt="Czwarty slide">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="uploads/images/blog/slide5.jpg" alt="Piąty slide">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="uploads/images/blog/slide6.jpg" alt="Szósty slide">
+                    </figure>
+                </div>
+
+                <nav role="pagination" class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </nav>
+                <nav role="pagination" class="arrows">
+                    <button class="arrow-prev">❮</button>
+                </nav>
+                <nav role="pagination" class="arrows">
+                    <button class="arrow-next">❯</button>
+                </nav>
+            </div>
 
         </div>
         <div class="bump12">
@@ -69,7 +127,6 @@
         <div class="podstrony">
 
         </div>
-
     </footer>
 </body>
 
