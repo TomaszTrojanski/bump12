@@ -9,124 +9,144 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-    <title>Bump'12</title>
-    <script src="page/comp.js"></script>
-    <script src="page/slider.js"></script>
-    <script>
-        (function() {
-            new Slider("#slider .slide").options({
-                prev: "#slider nav button.arrow-prev",
-                next: "#slider nav button.arrow-next",
-                nav: "#slider nav.dots span"
-            }).init();
-        })();
-    </script>
+    <script src="slider.js"></script>
+    <title>nazwa roboczaBump'12</title>
+    <link rel="icon" type="image/png" href="page/ico.png">
 </head>
 
 <body>
     <header>
-        <img class="menu" src="page/bump.gif">
+        <img class="menu" src="page/bump.jpg">
         <nav>
-            <a class="menu" href="#">O NAS</a>
-            <a class="menu" href="#">KOLEKTYW</a>
-            <a class="menu" href="#">SKLEP (W DRODZE)</a>
-            <a class="menu" href="#">RADIO</a>
+            <a class="menu" href="#onas">O NAS</a>
+            <a class="menu" href="#kolektyw">KOLEKTYW</a>
+            <a class="menu" href="#sklep">SKLEP<br>(W DRODZE)</a>
+            <a class="menu" href="https://www.youtube.com/watch?v=7XA711vsoNw&list=PLAzPVEQf_5x_2p-fdIyIcJUOYVSGLeUUF&index=3" target="_blank">RADIO</a>
         </nav>
     </header>
-    <div class="onas">
+    <div class="onas" id="onas">
         <div class="slide">
-            <div id="slider" class="slides">
-                <div class="slide">
-                    <figure>
-                        <img class="hidden" src="page/barto.jpg" alt="Pierwszy slide">
-                    </figure>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="page/barto.jpg" style="width:100%">
+                    <div class="text">BARTO KATT</div>
                 </div>
-                <div class="slide">
-                    <figure>
-                        <img class="hidden" src="page/kobyla.jpg" alt="Drugi slide">
-                    </figure>
+                <div class="mySlides fade">
+                    <img src="page/peepz.jpg" style="width:100%">
+                    <div class="text">PEEPZ</div>
                 </div>
-                <div class="slide">
-                    <figure>
-                        <img class="hidden" src="uploads/images/blog/slide3.jpg" alt="Trzeci slide">
-                    </figure>
+                <div class="mySlides fade">
+                    <img src="page/kobyla.jpg" style="width:100%">
+                    <div class="text">KOBYŁA</div>
                 </div>
-                <div class="slide">
-                    <figure>
-                        <img class="hidden" src="uploads/images/blog/slide4.jpg" alt="Czwarty slide">
-                    </figure>
+                <div class="mySlides fade">
+                    <img src="page/dawidb.jpg" style="width:100%">
+                    <div class="text">DAWID BORYSIEWICZ</div>
                 </div>
-                <div class="slide">
-                    <figure>
-                        <img class="hidden" src="uploads/images/blog/slide5.jpg" alt="Piąty slide">
-                    </figure>
-                </div>
-                <div class="slide">
-                    <figure>
-                        <img class="hidden" src="uploads/images/blog/slide6.jpg" alt="Szósty slide">
-                    </figure>
-                </div>
-
-                <nav role="pagination" class="dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </nav>
-                <nav role="pagination" class="arrows">
-                    <button class="arrow-prev">❮</button>
-                </nav>
-                <nav role="pagination" class="arrows">
-                    <button class="arrow-next">❯</button>
-                </nav>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
 
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
         </div>
         <div class="bump12">
-            <h1>Co to BUMP'12?</h1>
+            <h1 class="title">Co to BUMP'12?</h1>
             <span>
                 BUMP'12 to kolektyw, portal oraz wytwórnia muzyczna założona w 2017 roku przez Barto Katta oraz Peepz'a.
                 Jesteśmy po to by szeczyć nową, świażą muzykę, zależy nam tylko i wyłącznie na ambitnych brzmieniach i nie ukrywmy, że w dzisiejszych czasach jest ich zdecydowanie coraz mniej.
             </span>
         </div>
     </div>
-    <div class="fresh">
-        <img src="page/fresh.png">
-    </div>
     <div class="nowe">
         <div class="opis">
-            <h2>Barto Katt, SYDOZ, Miły ATZ "HARDCORE"</h2>
+            <h2 class="title">Barto Katt, SYDOZ, Miły ATZ "HARDCORE"</h2>
             <span>
-                Prezentujemy spontaniczny utwór w kolaboracji z zawodnikiem Def Jam Records Poland, założycielem GPC oraz przedewszystkim naszym ziomalem - Miłym ATZ!
+                Prezentujemy spontaniczny utwór w kolaboracji z zawodnikiem Def Jam Records Poland, założycielem GPC oraz przedewszystkim naszym ziomalem - Miłym ATZ!<br>
+                <b>Wideo dostępne tylko dla zalogowanych i pełnoletnich widzów.</b>
             </span>
         </div>
         <div class="video">
-
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C631vxCMIQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-    <div class="sklep">
+    <div class="sklep" id="sklep">
         <div class="baner">
-
+            <h2>SKLEP</h2>
         </div>
         <div class="przyszlysklep">
+            <div class="produkt">
+                <img src="page/angel.png">
+                <span>Kobyła - "Angel" LP</span>
+            </div>
+            <div class="produkt">
+                <img src="page/alltruizmy.png">
+                <span>Peepz - "All.trueizm" LP</span>
+            </div>
+
+            <div class="produkt">
+                <img src="page/zly_obywatel.png">
+                <span>(!)Nagłośnienie (Tommy Wersety) - "Zły Obywatel"</span>
+            </div>
+
+            <div class="produkt">
+                <img src="page/pablito.png">
+                <span>Kobyła - "Pablito" EP</span>
+            </div>
+
+            <div class="produkt">
+                <img src="page/nawajbarto.png">
+                <span>Nawaj/Barto'cut - "Za dnia marnuje talent" LP</span>
+            </div>
+
+            <div class="produkt">
+                <img src="page/zestaw_wek.png">
+                <span>T-shirt "Wandalizm Elementem Kultury"</span>
+            </div>
+
+            <div class="produkt">
+                <img src="page/czapka.jpg">
+                <span>Czapka zimowa "WEK"</span>
+            </div>
+
 
         </div>
     </div>
     <footer>
         <div class="kontakt">
-
+            <span>SKLEP: sklep@bump12.pl</span><br>
+            <span>GŁÓWNY: kolektyw@bump12.pl</span>
+        </div>
+        <div class="nr_konta ">
+            <span>Wydawnictw o Muzyczne BUMP'12</span><br>
+            <span>Nr. Konta: 02 1050 1605 1000 0097 2534 6374</span>
         </div>
         <div class="prawa">
+            <div class="footerlogo">
+                <img src="page/bump.jpg">
+            </div>
+            <div class="footertekst">
+                <span>BUMP'12&trade; Wszelkie prawa zastrzeżone</span>
+            </div>
+
 
         </div>
         <div class="socjale">
+            <a class="soc" href="https://www.youtube.com/channel/UC6RONPQR2-_hryzxIJ8DoJg" target="_blank"><img src="page/YouTube.svg"></a>
+            <a class="soc" href="https://www.facebook.com/bump12pl" target="_blank"><img src="page/Facebook.svg"></a>
+            <a class="soc" href="https://www.instagram.com/bbbump12/" target="_blank"><img src="page/Instagram.svg"></a>
+            <a class="soc" href="https://soundcloud.com/bump12collective" target="_blank"><img src="page/SoundCloud.svg"></a>
+            <a class="soc" href="https://open.spotify.com/artist/2CNjhN9CohFl56Qb2hqi9l" target="_blank"><img src="page/Spotify.svg"></a>
 
         </div>
-        <div class="podstrony">
-
-        </div>
+        <div class="empty">,</div>
     </footer>
 </body>
 

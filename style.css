@@ -5,6 +5,10 @@
     font-family: 'Courier Prime', monospace;
 }
 
+body {
+    padding: 0 10vw;
+}
+
 header {
     width: 100vw;
     height: 50px;
@@ -12,4 +16,276 @@ header {
     flex-direction: row;
 }
 
-.desctop-nav-inline-content {}
+.menu {
+    padding: 15px 0 15px 15px;
+}
+
+.menu a :hover {
+    color: #00fa9a;
+}
+
+header img {
+    /* width: 20%; */
+    height: 250%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.slide {
+    max-height: 20vh;
+}
+
+.onas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+
+.slide {
+    flex-basis: 50%;
+}
+
+.bump12 {
+    flex-basis: 50%;
+}
+
+.title {
+    color: #00fa9a;
+}
+
+.fresh {
+    background: url("page/fresh.png");
+    background-size: cover;
+    max-width: 1920px;
+    max-height: fit-content;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.nowe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opis {
+    flex-basis: 50%;
+    padding-right: 10vw;
+    font-size: large;
+}
+
+
+/* .video {
+    flex-basis: 50%;
+    height: 40vh;
+    width: 60vw;
+} */
+
+.sklep {}
+
+.baner {
+    background-color: #00fa9a;
+    color: white;
+    width: max-content;
+    height: max-content;
+    padding: 0px 15px 0px 19px;
+    font-size: 4em;
+    margin-left: 66%;
+    margin-bottom: 25px
+}
+
+.przyszlysklep {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produkt {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    font-size: medium;
+}
+
+.produkt img {
+    max-width: 15vw;
+}
+
+.produkt span {
+    max-width: 15vw;
+    font-weight: 500;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+
+/* ////////////Footer///////////// */
+
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kontakt {
+    background-color: #00fa9a;
+    padding: 8px;
+    width: max-content;
+    height: max-content;
+    font-weight: 600;
+}
+
+.nr_konta span {
+    color: #00fa9a;
+    background-color: black;
+    width: max-content;
+}
+
+.socjale {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.soc {
+    height: 2vh;
+    width: 2vw;
+    padding: auto;
+}
+
+.prawa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerlogo img {
+    width: 5vw;
+    margin-left: 40%;
+}
+
+.footertekst {
+    font-size: 10px;
+}
+
+.empty {
+    width: 24%;
+    visibility: hidden;
+}
+
+
+/* SLAJDER */
+
+.slideshow-container {
+    max-width: 20vw;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
