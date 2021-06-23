@@ -181,7 +181,12 @@ footer {
 /* ////////////SLAJDER///////////// */
 
 #bart {
-    max-height: 40vh;
+
+}
+.slajder-grzenia {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .slideshow-container {
@@ -290,4 +295,7 @@ footer {
     to {
         opacity: 1
     }
+}
+@media (max-width: 861px) {
+    /*hamburger menu*/
 }
