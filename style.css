@@ -10,23 +10,26 @@ body {
 }
 
 header {
-    width: 100vw;
-    height: 50px;
+    width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .menu {
     padding: 15px 0 15px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.menu a :hover {
+header a:hover {
     color: #00fa9a;
 }
 
 header img {
-    /* width: 20%; */
-    height: 250%;
+    height: 130%;
 }
 
 a {
@@ -34,19 +37,20 @@ a {
     color: #000;
 }
 
-.slide {
-    max-height: 20vh;
-}
-
 .onas {
     width: 100%;
     display: flex;
     flex-direction: row;
     font-size: large;
+    height: 500px;
 }
 
 .slide {
     flex-basis: 50%;
+}
+
+.slide img {
+    max-height: 50vh;
 }
 
 .bump12 {
@@ -57,15 +61,6 @@ a {
     color: #00fa9a;
 }
 
-.fresh {
-    background: url("page/fresh.png");
-    background-size: cover;
-    max-width: 1920px;
-    max-height: fit-content;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-
 .nowe {
     width: 100%;
     display: flex;
@@ -74,16 +69,18 @@ a {
 
 .opis {
     flex-basis: 50%;
-    padding-right: 10vw;
+    padding-right: vw;
     font-size: large;
 }
 
-
-/* .video {
+.wideo {
     flex-basis: 50%;
-    height: 40vh;
-    width: 60vw;
-} */
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
 
 .sklep {}
 
@@ -135,16 +132,17 @@ footer {
 
 .kontakt {
     background-color: #00fa9a;
-    padding: 8px;
     width: max-content;
     height: max-content;
     font-weight: 600;
+    font-size: 0.9em;
 }
 
 .nr_konta span {
     color: #00fa9a;
     background-color: black;
     width: max-content;
+    font-size: 0.9em;
 }
 
 .socjale {
@@ -154,8 +152,8 @@ footer {
 }
 
 .soc {
-    height: 2vh;
-    width: 2vw;
+    height: 30px;
+    width: 30px;
     padding: auto;
 }
 
@@ -167,11 +165,11 @@ footer {
 
 .footerlogo img {
     width: 5vw;
-    margin-left: 40%;
 }
 
 .footertekst {
     font-size: 10px;
+    margin-left: -27%;
 }
 
 .empty {
@@ -180,7 +178,11 @@ footer {
 }
 
 
-/* SLAJDER */
+/* ////////////SLAJDER///////////// */
+
+#bart {
+    max-height: 40vh;
+}
 
 .slideshow-container {
     max-width: 20vw;
